@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Crystal Collector</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+       
+  <!--Latest Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--My Personal CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet"> 
+
+  <!--jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    
+    <div class="jumbotron">
+      <h1>Crystal Collector</h1>
+      <hr>
+
+      <p>How to play:
+      <br>
+      You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.<!-- Click the gems of your choice to try and match the total score of the random number --> </p>
+      <hr>
+      <h2>CLICK A CRYSTAL TO BEGIN!</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <img src="http://www.clipartkid.com/images/290/blue-diamond-clip-art-at-clker-com-vector-clip-art-online-royalty-tB9auk-clipart.png" alt="diamond" class="img-rounded img-responsive jewel-one" id="blue">
+        </div>
+            <div class="col-md-2">
+            <img src="https://img.clipartfest.com/01e1c94a8bb61e97ccc1b2406fada6c0_emerald-gem-png-clipart-best-web-clipart-gem-clipart-png_4000-2954.png" alt="greenCrystal" class="img-rounded img-responsive jewel-two" id="green">
+        </div>
+            <div class="col-md-2">
+            <img src="https://img.clipartfest.com/ae7065ca4a975562ffa294551e0f4b26_gem-clipart-clipart-kid-gem-clipart_256-256.png" alt="pinkGem" class="img-rounded img-responsive jewel-three" id="red">
+        </div>
+            <div class="col-md-2">
+            <img src="https://img.clipartfest.com/751a72be57811946da1892cc6e93948b_jewels-and-gems-clipart-jewel-jewels-and-gems-clipart_600-507.png" alt="yellowCrystal" class="img-rounded img-responsive jewel-four" id="turqoise">
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <br><br>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Your Total Score</h3>
+            </div>
+            <div class="panel-body">
+              <span id="yourScore"></span>
+            </div>
+          </div>
+       </div> 
+
+       <div class="col-md-3">
+          <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Crystal Count</h3>
+              </div>
+              <div class="panel-body">
+                <span id="crystalCounter"></span>
+              </div>
+          </div>
+       </div>
+
+        <div class="col-md-3">
+          <div class="panel panel-success">
+              <div class="panel-heading">
+                <h3 class="panel-title">Win Counter</h3>
+              </div>
+              <div class="panel-body">
+                <span id="winCounter"></span>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Loss Counter</h3>
+            </div>
+            <div class="panel-body">
+              <span id="lossCounter"></span>
+            </div>
+          </div>
+        </div> 
+  </div>
+
+   <footer class="footer">
+      
+        <span>&copy; Noe Tellez | 2017 </span>
+      
+    </footer>
+
+
+
+<script type="text/javascript" src="assets/javascript/game.js"> </script>
+
+
+</body>
+
+</html>
