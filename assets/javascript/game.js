@@ -26,7 +26,7 @@
   }
 
 startGame();
-//pink
+
 
 function youLose ()
   {
