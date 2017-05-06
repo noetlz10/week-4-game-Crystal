@@ -1,6 +1,6 @@
  $(document).ready(function() {
 
-
+//Global Variables
   var crystalCounter = 0;
   var yourScore = 0;
   var winCounter = 0;
@@ -33,6 +33,7 @@ function youLose ()
     alert("You Lose!");
     lossCounter++;
     $('#lossCounter').html(lossCounter);
+    /*console.log(lossCounter);*/
     startGame ();
   }
 
@@ -41,15 +42,17 @@ function youWin ()
     alert("You Win!");
     winCounter++;
     $('#winCounter').html(winCounter);
+    /*console.log(winCounter);*/
     startGame ();
   }
 
-
+//on click functions that start the game
 $('#blue').on('click', function() {
     yourScore = blueGem + yourScore;
     $('#yourScore').html(yourScore);
   if (yourScore > crystalCounter) {
     youLose();
+    /*console.log(yourScore);*/
   }
   if (yourScore === crystalCounter) {
     youWin();
